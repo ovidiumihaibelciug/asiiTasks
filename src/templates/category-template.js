@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
-import Pagination from '../components/Pagination';
 
 const CategoryTemplate = ({ data, pageContext }) => {
   const {
@@ -29,12 +28,6 @@ const CategoryTemplate = ({ data, pageContext }) => {
       <Sidebar />
       <Page title={category}>
         <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
       </Page>
     </Layout>
   );

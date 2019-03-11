@@ -14,13 +14,13 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Users',
+      path: '/users'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+      label: 'Create article',
+      path: '/articles/create'
+    },
   ],
   author: {
     name: 'John Doe',
